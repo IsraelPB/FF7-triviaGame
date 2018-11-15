@@ -67,6 +67,8 @@ $("#question-area").hide();
 $("#answer-area").hide();
 $("#stats").hide();
 $("#end-area").hide();
+$(".backGroundi").hide();
+
 
 // Timer function that handles the countdown
 function timer() {
@@ -183,6 +185,7 @@ function checkAnswer(answer) {
 function startGame() {
     // gameStarted = true;
     $("#click-to-start").hide();
+    $(".backGroundi").show();
     
     updateQuestion();
 };
@@ -203,7 +206,7 @@ $(document).ready(function () {
         $("body").back
         $("#question-area").show();
         $("#stats").show();
-        $(".backGroundi").src= "../images/ffback.png";
+        // $(".backGroundi").src= "../images/ffback.png";
                 
         
     });
