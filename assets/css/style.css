@@ -32,7 +32,7 @@ p {
 
 .container, .container-fluid {
     
-    background-color: blue;
+    background-color: rgb(13, 13, 172);
     color: #ddd;
     padding-bottom: 20px;
     border: solid 3px;
@@ -70,11 +70,12 @@ p {
     border: solid 3px;
     border-color: #ddd;
     border-radius: 15px;
+    color:#ddd;
 }
 
 #question-area {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: blue;
+    background-color: rgb(13, 13, 172);
     color: #ddd;
     padding-bottom: 20px;
     border: solid 3px;
@@ -107,13 +108,27 @@ p {
 
 #time-remaining {
     font-size: 1.5rem;
-    text-decoration: underline;
+    text-decoration: none;
     margin-top: 15px;
 }
 
 #timer {
-    color: red;
+    color: rgb(202, 17, 216);
     font-family: monospace;
     font-weight: bold;
     font-size: 1.5rem;
 }
+
+.musicButtons {
+    margin-right: 650px;
+    background-color: transparent;
+    margin-top: 250px;
+    
+}
+#musicaAudio, #stopMusic{
+    background-color: transparent;
+    font-size: 12px;
+    border: none;
+    border-color: none;
+}
+

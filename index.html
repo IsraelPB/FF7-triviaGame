@@ -17,6 +17,10 @@
 </head>
 
 <body>
+
+       
+      
+    
  <div class ="backGroundi">
 
     <div class="container">
@@ -27,20 +31,19 @@
             </div>
         </div>
 
-        
 </div>
     </div>
 
         <!-- Stats -->
         <div class="row" id="stats">
             <div class="col-6">
-                <p>Correct so far :
+                <p>Battles Won! :
                     <span class="correct-sofar">0</span>
                 </p>
-                <p>Incorrect so far:
+                <p>Battles Lost..:
                     <span class="incorrect-sofar">0</span>
                 </p>
-                <p>Unanswered  so far:
+                <p>Battles Escaped..:
                     <span class="skipped-sofar">0</span>
                 </p>
             </div>
@@ -48,7 +51,7 @@
             <!-- Time remaining -->
             <div class="col-6">
                 
-                <p id="time-remaining">Time Left... </p>
+                <p id="time-remaining">Time..</p>
                 <p id="timer"></p>
             </div>
         </div>
@@ -56,9 +59,9 @@
 
 
 
-    <button class="btn btn-dark" id="click-to-start">NEW GAME..</button>
+    <button class="btn btn-dark" id="click-to-start">NEW GAME</button>
     <button class="btn btn-dark" id="regreso">continue..?</button>
-    
+   
 <br>
     <!-- Question area -->
     <div class="container" id="question-area">
@@ -108,17 +111,21 @@
         <div class="row">
             <div class="col-12">
                 <h2>GAME OVER.. you got..</h2><hr>
-                <p>Correct questions: <span class="correct-sofar"></span></p>
-                <p>Incorrect questions: <span class="incorrect-sofar"></span></p>
-                <p>Unanswered questions: <span class="skipped-sofar"></span></p>
+                <p>Battles Won!: <span class="correct-sofar"></span></p>
+                <p>Battles Lost..: <span class="incorrect-sofar"></span></p>
+                <p>Battles Escaped..: <span class="skipped-sofar"></span></p>
             </div>
         </div>
         <div class="row">
             <button class="btn btn-warning btn-block" id="play-again">Play again!</button>
         </div>
     </div>
-
-
+<div class="musicButtons">
+        <button class="btn btn-dark"  id="musicaAudio">Music..?</button>
+        <button class="btn btn-dark"  id="stopMusic">PAUSE</button>
+        
+</div>
+    <audio id="my_audio" src="assets/javascript/01-prelude.mp3" loop="loop"></audio>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

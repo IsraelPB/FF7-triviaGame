@@ -11,8 +11,10 @@ var timeoutVar;
 var waitBetweenQuestions = 4000; 
 
 // qs&as
-var questions = [
-    {
+var questions = [    
+    
+  
+{
         question: "What is cloud's main weapon?",
         choices: ['A spoon', 'Buster Sword', 'Masamune', 'Jesus'],
         correct: 1,
@@ -73,7 +75,7 @@ $(".backGroundi").hide();
 // Timer function that handles the countdown
 function timer() {
     time = 10;
-    $("#timer").html(time + " seconds");
+    $("#timer").html(time + " secs");
     clock = setInterval(countdown, 1000);
     function countdown() {
 
@@ -83,7 +85,7 @@ function timer() {
             clearInterval(clock);
             checkAnswer("timeout");
         };
-        $("#timer").html(time + " seconds");
+        $("#timer").html(time + " secs");
     };
 };
 
@@ -198,8 +200,22 @@ function endGame() {
 }
 
 
-$(document).ready(function () {
 
+$(document).ready(function () {
+    
+        var musica = document.createElement("audio");
+        musica.setAttribute("src","assets/javascript/01-prelude.mp3");
+        $("#musicaAudio").on("click", function() {
+            musica.play();
+
+        });
+    
+        $("#stopMusic").on("click",function(){
+            musica.pause();
+        })
+    
+
+  
     $("#click-to-start").on("click", function () {
         startGame();
         $("#regreso").hide();
